@@ -4,4 +4,4 @@
 
 Design inspiration and material sourced : Edge mini-game.
 
-![](.\resource\18180717200639.png)
+![](./resource/18180717200639.png)
