@@ -2,7 +2,7 @@
 
 **A browser mini-game built with the native HTML , CSS and JavaScript.** 
 
-Start folder:[app](./app)
+Start folder : [app](./app)
 
 Design inspiration and material sourced : Edge mini-game.
 
