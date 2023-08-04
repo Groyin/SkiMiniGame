@@ -1,8 +1,12 @@
 # SkiMiniGame
 
-**A browser mini-game built with the native HTML , CSS and JavaScript.** 
+Yida Yin May 1, 2022
 
-Start folder : [app](./app)
+A browser mini-game built with the native HTML , CSS and JavaScript.
+
+### Start folder 
+
+[app](./app)
 
 Design inspiration and material sourced : Edge mini-game.
 
