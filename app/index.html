@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    <style>
+
+        #k2{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(rgb(244, 244, 244) 0%, rgb(222, 222, 222) 100%);
+            left: 0%;
+            top: 0%;
+        }
+        #k3{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-image: url('./picture/bg.png');
+            background-position-x: 0;
+            background-position-y: 0;
+            left: 0%;
+            top: 0%;
+        
+        }
+        #k11{
+            position: fixed;
+            background-color: antiquewhite;
+            left: 0%;
+            top: 0%;
+        }
+        #k4{
+            display: inline-block;
+        }
+        #k14{
+            display: inline-block;
+        }
+        #k6{
+            position: fixed;
+            visibility: hidden;
+
+        }
+        #k5{
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            border:0px solid #0000006f;
+        }
+        #k7{
+            position: fixed;
+            left: 50%;
+            top: 0%;
+            transform: translate(-50%,0%);
+        }
+        #k9{
+            position: fixed;
+            visibility: hidden;
+        }
+        #k10{
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        </style>
+    <link href="./mudules/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="./mini.css">
+</head>
+<body>
+<div id="b1" >
+    <div id="b2"></div>
+    <div id="a1">滑 雪 大 冒 险</div>
+    <div id="a6" ></div>
+    <div id="a2" class="d3">游戏设置</div>
+    <div id="a11">
+        <div id="a3">单人无尽</div>
+        <div id="a5">简单</div>
+        <div id="a4">历史记录1241米</div>
+    </div>    
+    <div id="a7">
+        <span id="a8" class="d1">
+            <svg t="1649080813420" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5790" width="48" height="48"><path d="M729.6 931.2l-416-425.6 416-416c9.6-9.6 9.6-25.6 0-35.2-9.6-9.6-25.6-9.6-35.2 0l-432 435.2c-9.6 9.6-9.6 25.6 0 35.2l432 441.6c9.6 9.6 25.6 9.6 35.2 0C739.2 956.8 739.2 940.8 729.6 931.2z" p-id="5791"></path></svg>
+        </span>
+
+        <span id="a9" class="d1">
+            <svg t="1649080756438" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5544" width="48" height="48"><path d="M761.6 489.6l-432-435.2c-9.6-9.6-25.6-9.6-35.2 0-9.6 9.6-9.6 25.6 0 35.2l416 416-416 425.6c-9.6 9.6-9.6 25.6 0 35.2s25.6 9.6 35.2 0l432-441.6C771.2 515.2 771.2 499.2 761.6 489.6z" p-id="5545"></path></svg>
+        </span>
+    </div>
+    <div id="a12">
+        <div id="c1">
+
+        </div>
+        <div id="c2">
+
+        </div>
+        <div id="c3">
+
+        </div>
+        <div id="c4">
+
+        </div>
+        <div id="c5">
+
+        </div>
+    </div>
+    <audio id="audio1">
+        <source src="./music/Soundroll.mp3" type="audio/mpeg">
+        <source src="horse.ogg" type="audio/ogg">
+      您的浏览器不支持 audio 元素。
+    </audio>
+    <div id="a10" class="d3">开始游戏</div>
+</div>
+
+<!--游戏设置窗口-->
+<div id="b3">
+    <div id="a13" >
+        <svg class="d2" t="1649151988269" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2251" width="20" height="20"><path d="M557.3 512l329.3-329.4a32 32 0 1 0-45.2-45.2L512 466.7 182.6 137.4a32 32 0 1 0-45.2 45.2L466.7 512 137.4 841.4a31.9 31.9 0 0 0 0 45.2 31.9 31.9 0 0 0 45.2 0L512 557.3l329.4 329.3a31.9 31.9 0 0 0 45.2 0 31.9 31.9 0 0 0 0-45.2z" fill="#333333" p-id="2252"></path></svg>
+    </div>
+    <div id="a14">
+        预设选项
+
+    </div>
+    <div  id="a16">
+        选择游戏模式
+    </div>
+    <select id="a15" class="form-select" aria-label="Default select example">
+        <option selected>单人无尽</option>
+        <option value="1">单人计时赛</option>
+        <option value="2">单人障碍赛</option>
+        <option value="3">双人无尽</option>
+        <option value="4">双人计时赛</option>
+    </select>
+    <div id="a17">
+        选择难度
+    </div>
+    <select id="a18" class="form-select" aria-label="Default select example">
+        <option selected>简单</option>
+        <option value="1">中等</option>
+        <option value="2">困难</option>
+    </select>
+    <div id="a19"></div>
+
+    <div id="a24">
+        <div id="a25">
+            小地图
+        </div>
+        <div id="a26">
+            开
+        </div>
+        <div id="a27" class="form-check form-switch">
+            <input id="a36" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" style="cursor:pointer;" checked>
+        </div>
+    </div>
+
+    <div id="a20">
+        <div id="a21">
+            物体标记
+        </div>
+        <div id="a22">
+            关
+        </div>
+        <div id="a23" class="form-check form-switch">
+            <input id="a37" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" style="cursor:pointer;">
+        </div>
+
+    </div>
+    
+    <div id="a28">
+        <div id="a29">
+            移速减慢
+        </div>
+        <div id="a30">
+            关
+        </div>
+        <div id="a31" class="form-check form-switch">
+            <input id="a38" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" style="cursor:pointer;">
+        </div>
+    </div>
+
+    <div id="a32"></div>
+
+    <div id="a33">玩法</div>
+    <div id="a34">制作人员</div>
+    <div id="a35">重置所有统计信息</div>
+
+
+    
+
+
+
+</div>
+
+<!--游戏界面-->
+<div id="a40">
+    
+
+    <!--灰色背景-->
+    <div id="k2"></div>
+
+    <!--雪地图片背景-->
+    <div id="k3"></div>
+    <div id="k11">
+        <div id="k13">用时<div id="k4">00:00.00</div></div>
+        <div id="k12">距离<div id="k14">0</div>米</div>
+    </div>    
+    <!--顶部游戏名称-->
+    <div id="k7"></div>
+    <!--背景物体画布-->
+    <img id="k9" src="./picture/objects.png" alt="11">
+    <canvas id="k10"></canvas>
+    <!--中间人物画布-->
+    <img src="./picture/player2.png" alt="11" width="" id="k6">
+    <canvas id="k5" width="70" height=68">您的浏览器不支持 HTML5 canvas 标签。</canvas>
+
+    <div id="a42" class="d3">游戏设置</div>
+    <div id="a46"></div>
+</div>
+
+<!--游戏中设置窗口-->
+<div id="a41">
+    
+    <div id="a14">
+        游戏暂停
+
+    </div>
+    <div id="a44" class="d3">
+        继续游戏
+    </div>
+    <div id="a45" class="d3">
+        主菜单
+    </div>
+    <div id="a19"></div>
+    
+
+    <div id="a24">
+        <div id="a25">
+            小地图
+        </div>
+        <div id="s26">
+            开
+        </div>
+        <div id="a27" class="form-check form-switch">
+            <input id="s36" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" style="cursor:pointer;" checked>
+        </div>
+    </div>
+
+    <div id="a20">
+        <div id="a21">
+            物体标记
+        </div>
+        <div id="s22">
+            关
+        </div>
+        <div id="a23" class="form-check form-switch">
+            <input id="s37" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" style="cursor:pointer;">
+        </div>
+
+    </div>
+    
+    <div id="a28">
+        <div id="a29">
+            移速减慢
+        </div>
+        <div id="s30">
+            关
+        </div>
+        <div id="a31" class="form-check form-switch">
+            <input id="s38" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" style="cursor:pointer;">
+        </div>
+    </div>
+
+    <div id="a32"></div>
+
+    <div id="a33">玩法</div>
+    <div id="a34">制作人员</div>
+    <div id="a35">重置所有统计信息</div>
+
+
+    
+
+
+
+</div>
+
+</body>
+<script src="./mudules/bootstrap.bundle.min.js" ></script>
+<script src="./mudules/jquery.min.js"></script>
+<script src="./mini.js"></script>
+
+
+</html>
+
